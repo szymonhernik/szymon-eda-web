@@ -1,90 +1,67 @@
-/* Reset some default styles */
-.container p,
-.container li,
-.container h1 {
-  font-size: 1.2rem;
-  text-align: left;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.07rem;
-}
-.container {
-  margin: 80vh 0;
-}
-
-.lyrics {
-  padding-bottom: 100%;
-  padding-top: 40%;
-}
-
-ul li {
-  padding-bottom: 0.8rem;
-}
-
-.lyrics p {
-  margin: 0;
-  /* transform: rotateZ(20deg); */
-
-  font-size: 0.8rem;
-  text-align: left;
-
-  /* line-height: 1.25rem; */
-  line-height: 1.5rem;
-  letter-spacing: 0.07rem;
-}
-.lyrics p.bands {
+@font-face {
+  font-family: Hershey;
+  src: url(fonts/Hershey-Noailles-Futura-Simplex-Regular.woff);
 }
 
 body {
-  font-family: "monotype-grotesque", sans-serif;
+  background: #ede8e4;
 }
 
-header {
-  text-transform: uppercase;
-}
-header,
-nav,
-.contact-info {
-  text-align: center;
+#text-container {
+  color: #141312;
+  margin: 10vh 35vw;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-family: Hershey, sans-serif;
 }
 
-h1 {
-  margin-bottom: 20px;
+img {
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid #1c1716;
+  box-shadow: 5px 5px 41px 11px rgba(0, 0, 0, 0.4);
+}
+
+figure {
+  margin: 0 0 3vh;
+}
+
+figure > figcaption {
+  font-size: 1rem;
+  text-align: right;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 1600px) {
+  #text-container {
+    margin: 10vh 20vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #text-container {
+    margin: 10vh 5vw;
+  }
+}
+
+:root {
+  --telescope-highlight: #95abe655;
+  --telescope-highlight-hover: #95abe699;
+  --telescope-text-color: #1f2021;
+}
+
+.signoff {
+  font-size: 1em;
 }
 
 a {
-  color: #000;
+  color: #0060b6;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  padding: 20px;
-  font-family: "monotype-grotesque";
-}
-
-.column {
-  /* padding: 15% 0 0 10%; */
-
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
-  img {
-    width: 480px;
-    height: auto;
-  }
-  .column {
-    padding: 0;
-  }
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
 }
